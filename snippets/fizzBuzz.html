@@ -1,30 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Test of node</title>
 </head>
+
 <body>
-        <h1>Node test</h1>
-        <h3 id="numberOnPage"></h3>
-   <script>
-   //fizzbuzz
-   function fizzbuzz(){
-       let i = false;
-       if (typeof(i) != "number") console.log(NaN);
+    <h1>Node test</h1>
+    <h3 id="numberOnPage"></h3>
+    <script>
+        //fizzbuzz
+        function fizzbuzz() {
+            let i = false;
+            if (typeof (i) != "number") console.log(NaN);
 
-       for (i = 0; i < 50; i++){
-            if ((i % 5 == 0) && (i % 3 == 0)) console.log('FizzBuzz'+i);
-                else if(i % 3 == 0) console.log('Fizz'+ i);
-                else if (i % 5 == 0) console.log('Buzz'+i);
-       }
-   }
+            for (i = 0; i < 50; i++) {
+                if ((i % 5 == 0) && (i % 3 == 0)) console.log('FizzBuzz' + i);
+                else if (i % 3 == 0) console.log('Fizz' + i);
+                else if (i % 5 == 0) console.log('Buzz' + i);
+            }
+        }
 
-   fizzbuzz();
+        fizzbuzz();
 
-   //document.getElementById('numberOnPage').innerHTML = 'FizzBuzz Code';
-   </script> 
+        //document.getElementById('numberOnPage').innerHTML = 'FizzBuzz Code';
+        function evenOdd(number) {
+            for (i = 0; i <= 10; i++) {
+                if (i % 2 == 0) console.log(i + ' Even')
+                else console.log(i + ' Odd');
+            }
+        }
+
+        evenOdd();
+    </script>
 </body>
+
 </html>
