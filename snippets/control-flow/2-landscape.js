@@ -1,0 +1,6 @@
+//Check if width is greater than length (landscape)
+console.log(isLandscape(300, 600));
+
+function isLandscape(width, height) {
+  return width > height;
+}
