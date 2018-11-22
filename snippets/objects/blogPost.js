@@ -30,3 +30,17 @@ function showBlogPost(blogPost) {
     console.log(key, blogPost[key]);
   }
 }
+
+//constructor function
+function CreateBlogPost(title, body, author) {
+  this.title = title;
+  this.body = body;
+  this.author = author;
+  this.views = 0;
+  this.comments = [];
+  this.isLive = false;
+}
+
+let myBlogPost = new CreateBlogPost("1", "2", "3");
+
+console.log(myBlogPost);
