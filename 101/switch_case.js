@@ -1,12 +1,15 @@
-let x = 1;
+// Check user role using switch statements
+let role = "admin";
 
-switch (value) {
-  case 1:
-    console.log(1);
+switch (role) {
+  case "admin":
+    console.log("admin user");
     break;
-  case 2:
-    console.log(2);
+  case "editor":
+    console.log("editor user");
     break;
   default:
-    console.log(0);
+    console.log("guest user");
 }
+
+//outputs 'admin user'

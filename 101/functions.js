@@ -1,29 +1,32 @@
+// Get area of a square
 function square(number) {
   return number * number;
 }
 
-// Arrow functions
-const square = function (number) {
-  return number * number;
-}
+// ecma6:
 
-// ecma6
+// Assign function to variable
+const square = function(number) {
+  return number * number;
+};
+
+// Arrow function
 const square = number => {
   return number * number;
-}
+};
 
-// if only 1 parameter
+// If only 1 parameter
 const square = number => {
   return number * number;
-}
+};
 
-// if no parameters
+// If no parameters
 const square = () => {
   return number * number;
-}
+};
 
-// if only single line
+// on Single line
 const square = number => number * number;
 
-// call function
+// Call function
 console.log(square(5)); // 25

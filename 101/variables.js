@@ -1,3 +1,4 @@
+// Ya basic variables
 let name = "Rob";
 let age = 34;
 let isActive = true;
